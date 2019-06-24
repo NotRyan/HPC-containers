@@ -33,10 +33,10 @@ From: centos:7
     yum install -y perl
     yum install -y perl-CPAN
     cpan Module::Build
+    cpan Archive::Zip Crypt::Mode::CBC Crypt::Mode::ECB Graphics::ColorUtils OLE::Storage_Lite Spreadsheet::ParseExcel
+    cpan XML::Twig
 
     #Install packages availiable through R
     Rscript -e 'install.packages(c("gdata", "zoo", "fields"), repos="https://cloud.r-project.org")'
     Rscript -e 'install.packages(c("glmnet", "ncvreg", "doParallel"), repos="https://cloud.r-project.org")'
-
-    #Clean up installation files
-    rm -rf *
+ 
